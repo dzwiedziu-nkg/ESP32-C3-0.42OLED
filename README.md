@@ -1,3 +1,22 @@
+# ESP32-C3-0.42OLED
+
+Hi, this is a fork of the original example for the ESP-C3 version without the RGB diode.
+
+My changes:
+* use `U8G2_SH1106_72X40_WISE_F_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE, 6, 5);` for initialize **u8g2**,
+* comment out `ws2812fx` because this model don't have RGB led,
+* add buildin led blinking,
+* add WiFi and OTA,
+* setup printing on serial port,
+
+
+![image](image/esp32-c3_front.jpg)
+![image](image/esp32-c3_back.jpg)
+
+Below is the original README:
+
+
+
 # ESP32-S3-0.42OLED
 
 
